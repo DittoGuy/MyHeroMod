@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "my_hero:recipro_burst"
+    },
+    "title": {
+      "translate": "advancements.float_quirk.title"
+    },
+    "description": {
+      "translate": "advancements.float_quirk.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "float_quirk": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bedrock"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "my_hero:quirk_engine"
+}

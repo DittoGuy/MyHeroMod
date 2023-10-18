@@ -1,0 +1,995 @@
+{
+  "mod_elements": [
+    {
+      "name": "SuperRegeneration1",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_regeneration_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/models/item/super_regeneration_1.json",
+          "src/main/java/net/mcreator/myhero/item/SuperRegeneration1Item.java"
+        ]
+      },
+      "path": "~/quirks/transformation Quirk/Super Regeneration"
+    },
+    {
+      "name": "Tempbeforegui",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tempbeforegui",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "SuperRegeneration1Rightclicked",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_regeneration_1_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/SuperRegeneration1RightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quirks/transformation Quirk/Super Regeneration"
+    },
+    {
+      "name": "ShockAbsorptionRightclicked",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_absorption_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/ShockAbsorptionRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Shock Absorption"
+    },
+    {
+      "name": "ShockAbsorption",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_absorption",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/models/item/shock_absorption.json",
+          "src/main/java/net/mcreator/myhero/item/ShockAbsorptionItem.java"
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Shock Absorption"
+    },
+    {
+      "name": "InvisibilityRightclicked",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisibility_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/InvisibilityRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Invisibility"
+    },
+    {
+      "name": "Invisibility",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisibility",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/item/InvisibilityItem.java",
+          "src/main/resources/assets/my_hero/models/item/invisibility.json"
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Invisibility"
+    },
+    {
+      "name": "Invisibilityd",
+      "type": "particle",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisibilityd",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/particles/invisibilityd.json",
+          "src/main/java/net/mcreator/myhero/client/particle/InvisibilitydParticle.java"
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Invisibility"
+    },
+    {
+      "name": "Engine",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/item/EngineItem.java",
+          "src/main/resources/assets/my_hero/models/item/engine.json"
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Engine"
+    },
+    {
+      "name": "EngineRightclicked",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engine_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/EngineRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Engine"
+    },
+    {
+      "name": "ReciproBurstRightclicked",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipro_burst_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/ReciproBurstRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Engine"
+    },
+    {
+      "name": "ReciproBurst",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipro_burst",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/models/item/recipro_burst.json",
+          "src/main/java/net/mcreator/myhero/item/ReciproBurstItem.java"
+        ]
+      },
+      "path": "~/quirks/mutation Quirks/Engine"
+    },
+    {
+      "name": "FloatitemRightclicked",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floatitem_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/FloatitemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Float"
+    },
+    {
+      "name": "Floatitem",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floatitem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/models/item/floatitem.json",
+          "src/main/java/net/mcreator/myhero/item/FloatitemItem.java"
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Float"
+    },
+    {
+      "name": "Air",
+      "type": "particle",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/particles/air.json",
+          "src/main/java/net/mcreator/myhero/client/particle/AirParticle.java"
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Air Cannon"
+    },
+    {
+      "name": "AirCannonProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_cannon_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/AirCannonProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Air Cannon"
+    },
+    {
+      "name": "AirCannon",
+      "type": "rangeditem",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_cannon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/item/AirCannonItem.java",
+          "src/main/resources/assets/my_hero/models/item/air_cannon.json",
+          "src/main/java/net/mcreator/myhero/entity/AirCannonEntity.java"
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Air Cannon"
+    },
+    {
+      "name": "AirCannonWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_cannon_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/AirCannonWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Air Cannon"
+    },
+    {
+      "name": "Cooldown",
+      "type": "potioneffect",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/potion/CooldownMobEffect.java"
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "SwitchquirkOnKeyPressed",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switchquirk_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/SwitchquirkOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "UsequirkOnKeyPressed",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usequirk_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/UsequirkOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "Switchquirk",
+      "type": "keybind",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switchquirk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/network/SwitchquirkMessage.java"
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "Usequirk",
+      "type": "keybind",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usequirk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/network/UsequirkMessage.java"
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "Quirkvalue",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirkvalue",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/QuirkvalueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "QuirkOverlay",
+      "type": "overlay",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/client/screens/QuirkOverlayOverlay.java"
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "QuirkEngine",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_engine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/quirk_engine.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Gate",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/GateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/gates"
+    },
+    {
+      "name": "Floatquirk",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floatquirk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/floatquirk.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Floatgate",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floatgate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/FloatgateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/gates"
+    },
+    {
+      "name": "FloatflingRightclicked",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floatfling_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/FloatflingRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Float"
+    },
+    {
+      "name": "Floatfling",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floatfling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/item/FloatflingItem.java",
+          "src/main/resources/assets/my_hero/models/item/floatfling.json"
+        ]
+      },
+      "path": "~/quirks/emitter Quirks/Float"
+    },
+    {
+      "name": "GearshiftQuirk",
+      "type": "achievement",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gearshift_quirk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/gearshift_quirk.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Gearshiftgate",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gearshiftgate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/GearshiftgateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/gates"
+    },
+    {
+      "name": "SuperHealing",
+      "type": "achievement",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_healing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/super_healing.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Healgate",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healgate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/HealgateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/gates"
+    },
+    {
+      "name": "Jackpot",
+      "type": "achievement",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jackpot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/jackpot.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Playerupdatetick",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerupdatetick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/PlayerupdatetickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "Respawn",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "respawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/RespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "PermeationAdv",
+      "type": "achievement",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "permeation_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/permeation_adv.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "PermeationGate",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "permeation_gate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/PermeationGateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "SPAWNQURIK",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnqurik",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/SPAWNQURIKProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Copy",
+      "type": "livingentity",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/models/item/copy_spawn_egg.json",
+          "src/main/java/net/mcreator/myhero/entity/CopyEntity.java",
+          "src/main/java/net/mcreator/myhero/client/renderer/CopyRenderer.java",
+          "src/main/resources/data/my_hero/forge/biome_modifier/copy_biome_modifier.json"
+        ]
+      },
+      "path": "~/mobs"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "switchquirk",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "selecetedquirk",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Health",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Speed",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "strength",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "energy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "qurik_Control",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "max_Health",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "20.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "advancements.gearshift_quirk.title": "Gearshift Quirk",
+      "entity.my_hero.copy": "Copy",
+      "key.my_hero.usequirk": "Usequirk",
+      "advancements.floatquirk.title": "Floatquirk",
+      "effect.my_hero.cooldown": "cooldown",
+      "advancements.jackpot.title": "Jackpot",
+      "item.my_hero.engine": "Engine",
+      "item.my_hero.super_regeneration_1": "Super Regeneration 1",
+      "key.my_hero.switchquirk": "Switch quirk",
+      "advancements.floatquirk.descr": "float",
+      "advancements.permeation_adv.title": "Permeation Adv",
+      "advancements.jackpot.descr": "hakari",
+      "item_group.my_hero.tempbeforegui": "Tempbeforegui",
+      "advancements.permeation_adv.descr": "d",
+      "advancements.quirk_engine.descr": "Engine",
+      "advancements.super_healing.descr": "super healing",
+      "item.my_hero.recipro_burst": "Recipro Burst",
+      "item.my_hero.air_cannon": "Air Cannon",
+      "item.my_hero.floatfling": "Floatfling",
+      "item.my_hero.invisibility": "Invisibility",
+      "advancements.gearshift_quirk.descr": "gearshift",
+      "advancements.super_healing.title": "Super Healing",
+      "item.my_hero.floatitem": "Floatitem",
+      "advancements.quirk_engine.title": "Quirk Engine",
+      "item.my_hero.shock_absorption": "Shock Absorption",
+      "item.my_hero.copy_spawn_egg": "Copy Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "quirks",
+        "children": [
+          {
+            "name": "emitter Quirks",
+            "children": [
+              {
+                "name": "Float",
+                "children": []
+              },
+              {
+                "name": "Half-Cold Half-Hot",
+                "children": []
+              },
+              {
+                "name": "Explosion",
+                "children": []
+              },
+              {
+                "name": "Electrification",
+                "children": []
+              },
+              {
+                "name": "Air Cannon",
+                "children": []
+              },
+              {
+                "name": "Gear Shift",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "mutation Quirks",
+            "children": [
+              {
+                "name": "Dupli-Arms",
+                "children": []
+              },
+              {
+                "name": "Engine",
+                "children": []
+              },
+              {
+                "name": "Invisibility",
+                "children": []
+              },
+              {
+                "name": "Shock Absorption",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "transformation Quirk",
+            "children": [
+              {
+                "name": "Hardening",
+                "children": []
+              },
+              {
+                "name": "Super Regeneration",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "accumulation-type",
+            "children": []
+          },
+          {
+            "name": "Quirkless",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "gui stuff",
+        "children": [
+          {
+            "name": "adv",
+            "children": []
+          },
+          {
+            "name": "gates",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Stats",
+        "children": []
+      },
+      {
+        "name": "mobs",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "my_hero",
+    "modName": "my hero",
+    "version": "1.0.0",
+    "author": "miloM, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.myhero",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

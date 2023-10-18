@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "my_hero:invisibility"
+    },
+    "title": {
+      "translate": "advancements.permeation_adv.title"
+    },
+    "description": {
+      "translate": "advancements.permeation_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "permeation_adv": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bedrock"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "my_hero:quirk_engine"
+}

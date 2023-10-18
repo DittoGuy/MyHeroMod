@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "my_hero:super_regeneration_1"
+    },
+    "title": {
+      "translate": "advancements.super_healing.title"
+    },
+    "description": {
+      "translate": "advancements.super_healing.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "super_healing": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:bedrock"
+      }
+    }
+  },
+  "parent": "my_hero:quirk_engine"
+}
