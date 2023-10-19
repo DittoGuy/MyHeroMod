@@ -781,25 +781,25 @@
       "registry_name": "copy",
       "metadata": {
         "files": [
+          "src/main/resources/assets/my_hero/models/item/copy_spawn_egg.json",
           "src/main/java/net/mcreator/myhero/entity/CopyEntity.java",
           "src/main/java/net/mcreator/myhero/client/renderer/CopyRenderer.java",
-          "src/main/resources/data/my_hero/forge/biome_modifier/copy_biome_modifier.json",
-          "src/main/resources/assets/my_hero/models/item/copy_spawn_egg.json"
+          "src/main/resources/data/my_hero/forge/biome_modifier/copy_biome_modifier.json"
         ]
       },
       "path": "~/mobs"
     },
     {
-      "name": "Createsion",
-      "type": "gui",
-      "sortid": 44,
+      "name": "Testgujiopener",
+      "type": "item",
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "createsion",
+      "registry_name": "testgujiopener",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/myhero/client/gui/CreatesionScreen.java",
-          "src/main/java/net/mcreator/myhero/world/inventory/CreatesionMenu.java"
+          "src/main/java/net/mcreator/myhero/item/TestgujiopenerItem.java",
+          "src/main/resources/assets/my_hero/models/item/testgujiopener.json"
         ]
       },
       "path": "~/gui stuff/create"
@@ -841,19 +841,49 @@
       "path": "~/gui stuff/create"
     },
     {
-      "name": "Testgujiopener",
-      "type": "item",
-      "sortid": 46,
+      "name": "Createsion",
+      "type": "gui",
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "testgujiopener",
+      "registry_name": "createsion",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/myhero/item/TestgujiopenerItem.java",
-          "src/main/resources/assets/my_hero/models/item/testgujiopener.json"
+          "src/main/java/net/mcreator/myhero/client/gui/CreatesionScreen.java",
+          "src/main/java/net/mcreator/myhero/world/inventory/CreatesionMenu.java"
         ]
       },
       "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Hitbefore",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hitbefore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/HitbeforeProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "EntityAttack",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/EntityAttackProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
     }
   ],
   "variable_elements": [
@@ -912,19 +942,15 @@
       "advancements.gearshift_quirk.title": "Gearshift Quirk",
       "entity.my_hero.copy": "Copy",
       "key.my_hero.usequirk": "Usequirk",
-      "gui.my_hero.createsion.button_item": "Item",
       "advancements.floatquirk.title": "Floatquirk",
-      "gui.my_hero.createsion.button_enchants": "Enchants",
-      "item.my_hero.testgujiopener": "Testgujiopener",
       "effect.my_hero.cooldown": "cooldown",
       "advancements.jackpot.title": "Jackpot",
-      "item.my_hero.engine": "Engine",
-      "item.my_hero.super_regeneration_1": "Super Regeneration 1",
-      "key.my_hero.switchquirk": "Switch quirk",
-      "advancements.floatquirk.descr": "float",
       "advancements.permeation_adv.title": "Permeation Adv",
+      "advancements.floatquirk.descr": "float",
+      "key.my_hero.switchquirk": "Switch quirk",
+      "item.my_hero.super_regeneration_1": "Super Regeneration 1",
+      "item.my_hero.engine": "Engine",
       "advancements.jackpot.descr": "hakari",
-      "gui.my_hero.createsion.button_done": "done",
       "item_group.my_hero.tempbeforegui": "Tempbeforegui",
       "advancements.permeation_adv.descr": "d",
       "advancements.quirk_engine.descr": "Engine",
@@ -932,7 +958,6 @@
       "item.my_hero.recipro_burst": "Recipro Burst",
       "item.my_hero.air_cannon": "Air Cannon",
       "item.my_hero.floatfling": "Floatfling",
-      "gui.my_hero.createsion.label_creation": "Creation",
       "item.my_hero.invisibility": "Invisibility",
       "advancements.gearshift_quirk.descr": "gearshift",
       "advancements.super_healing.title": "Super Healing",
@@ -946,13 +971,21 @@
     "name": "~",
     "children": [
       {
+        "name": "Stats",
+        "children": []
+      },
+      {
         "name": "quirks",
         "children": [
+          {
+            "name": "Quirkless",
+            "children": []
+          },
           {
             "name": "emitter Quirks",
             "children": [
               {
-                "name": "Float",
+                "name": "Explosion",
                 "children": []
               },
               {
@@ -960,7 +993,11 @@
                 "children": []
               },
               {
-                "name": "Explosion",
+                "name": "Gear Shift",
+                "children": []
+              },
+              {
+                "name": "Float",
                 "children": []
               },
               {
@@ -970,30 +1007,30 @@
               {
                 "name": "Air Cannon",
                 "children": []
-              },
-              {
-                "name": "Gear Shift",
-                "children": []
               }
             ]
+          },
+          {
+            "name": "accumulation-type",
+            "children": []
           },
           {
             "name": "mutation Quirks",
             "children": [
               {
-                "name": "Dupli-Arms",
-                "children": []
-              },
-              {
-                "name": "Engine",
-                "children": []
-              },
-              {
                 "name": "Invisibility",
                 "children": []
               },
               {
+                "name": "Dupli-Arms",
+                "children": []
+              },
+              {
                 "name": "Shock Absorption",
+                "children": []
+              },
+              {
+                "name": "Engine",
                 "children": []
               }
             ]
@@ -1010,26 +1047,22 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "accumulation-type",
-            "children": []
-          },
-          {
-            "name": "Quirkless",
-            "children": []
           }
         ]
+      },
+      {
+        "name": "mobs",
+        "children": []
       },
       {
         "name": "gui stuff",
         "children": [
           {
-            "name": "adv",
+            "name": "gates",
             "children": []
           },
           {
-            "name": "gates",
+            "name": "adv",
             "children": []
           },
           {
@@ -1037,14 +1070,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Stats",
-        "children": []
-      },
-      {
-        "name": "mobs",
-        "children": []
       }
     ]
   },

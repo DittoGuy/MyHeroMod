@@ -1,15 +1,8 @@
 
 package net.mcreator.myhero.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-
-import net.mcreator.myhero.procedures.TestgujiopenerRightclickedProcedure;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class TestgujiopenerItem extends Item {
 	public TestgujiopenerItem() {
@@ -23,7 +16,7 @@ public class TestgujiopenerItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		TestgujiopenerRightclickedProcedure.execute(world, x, y, z, entity);
+		TestgujiopenerRightclickedProcedure.execute();
 		return ar;
 	}
 }

@@ -1,25 +1,13 @@
 package net.mcreator.myhero.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
-
-import net.mcreator.myhero.world.inventory.CreatesionMenu;
-
-import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
+
 	private final static HashMap<String, Object> guistate = CreatesionMenu.guistate;
+
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+
 	Button button_item;
 	Button button_enchants;
 	Button button_done;
@@ -40,8 +28,11 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
+
 		super.render(ms, mouseX, mouseY, partialTicks);
+
 		this.renderTooltip(ms, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -49,8 +40,10 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -60,6 +53,7 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -81,17 +75,25 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 	@Override
 	public void init() {
 		super.init();
+
 		button_item = Button.builder(Component.translatable("gui.my_hero.createsion.button_item"), e -> {
 		}).bounds(this.leftPos + 4, this.topPos + 17, 46, 20).build();
+
 		guistate.put("button:button_item", button_item);
 		this.addRenderableWidget(button_item);
+
 		button_enchants = Button.builder(Component.translatable("gui.my_hero.createsion.button_enchants"), e -> {
 		}).bounds(this.leftPos + 106, this.topPos + 16, 67, 20).build();
+
 		guistate.put("button:button_enchants", button_enchants);
 		this.addRenderableWidget(button_enchants);
+
 		button_done = Button.builder(Component.translatable("gui.my_hero.createsion.button_done"), e -> {
 		}).bounds(this.leftPos + 56, this.topPos + 60, 46, 20).build();
+
 		guistate.put("button:button_done", button_done);
 		this.addRenderableWidget(button_done);
+
 	}
+
 }
