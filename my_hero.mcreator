@@ -788,6 +788,36 @@
         ]
       },
       "path": "~/mobs"
+    },
+    {
+      "name": "Hitbefore",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hitbefore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/HitbeforeProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
+    },
+    {
+      "name": "EntityAttack",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/EntityAttackProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Stats"
     }
   ],
   "variable_elements": [
@@ -849,11 +879,11 @@
       "advancements.floatquirk.title": "Floatquirk",
       "effect.my_hero.cooldown": "cooldown",
       "advancements.jackpot.title": "Jackpot",
-      "item.my_hero.engine": "Engine",
-      "item.my_hero.super_regeneration_1": "Super Regeneration 1",
-      "key.my_hero.switchquirk": "Switch quirk",
-      "advancements.floatquirk.descr": "float",
       "advancements.permeation_adv.title": "Permeation Adv",
+      "advancements.floatquirk.descr": "float",
+      "key.my_hero.switchquirk": "Switch quirk",
+      "item.my_hero.super_regeneration_1": "Super Regeneration 1",
+      "item.my_hero.engine": "Engine",
       "advancements.jackpot.descr": "hakari",
       "item_group.my_hero.tempbeforegui": "Tempbeforegui",
       "advancements.permeation_adv.descr": "d",
