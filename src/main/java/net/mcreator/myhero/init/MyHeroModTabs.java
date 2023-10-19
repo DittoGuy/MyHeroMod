@@ -35,6 +35,7 @@ public class MyHeroModTabs {
 					tabData.accept(MyHeroModItems.FLOATITEM.get());
 					tabData.accept(MyHeroModItems.AIR_CANNON.get());
 					tabData.accept(MyHeroModItems.FLOATFLING.get());
+					tabData.accept(MyHeroModItems.TESTGUJIOPENER.get());
 				})
 
 		);

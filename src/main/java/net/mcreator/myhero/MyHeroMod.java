@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.myhero.init.MyHeroModParticleTypes;
 import net.mcreator.myhero.init.MyHeroModMobEffects;
+import net.mcreator.myhero.init.MyHeroModMenus;
 import net.mcreator.myhero.init.MyHeroModItems;
 import net.mcreator.myhero.init.MyHeroModEntities;
 
@@ -57,6 +58,8 @@ public class MyHeroMod {
 
 		MyHeroModParticleTypes.REGISTRY.register(bus);
 		MyHeroModMobEffects.REGISTRY.register(bus);
+
+		MyHeroModMenus.REGISTRY.register(bus);
 
 	}
 

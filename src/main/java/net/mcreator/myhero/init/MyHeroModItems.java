@@ -11,6 +11,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.myhero.item.TestgujiopenerItem;
 import net.mcreator.myhero.item.SuperRegeneration1Item;
 import net.mcreator.myhero.item.ShockAbsorptionItem;
 import net.mcreator.myhero.item.ReciproBurstItem;
@@ -32,4 +33,5 @@ public class MyHeroModItems {
 	public static final RegistryObject<Item> AIR_CANNON = REGISTRY.register("air_cannon", () -> new AirCannonItem());
 	public static final RegistryObject<Item> FLOATFLING = REGISTRY.register("floatfling", () -> new FloatflingItem());
 	public static final RegistryObject<Item> COPY_SPAWN_EGG = REGISTRY.register("copy_spawn_egg", () -> new ForgeSpawnEggItem(MyHeroModEntities.COPY, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> TESTGUJIOPENER = REGISTRY.register("testgujiopener", () -> new TestgujiopenerItem());
 }
