@@ -8,8 +8,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 
-import net.mcreator.myhero.world.inventory.CreatesionMenu;
-import net.mcreator.myhero.network.CreatesionButtonMessage;
+import net.mcreator.myhero.world.inventory.CreationitemguiMenu;
+import net.mcreator.myhero.network.CreationitemguiButtonMessage;
 import net.mcreator.myhero.MyHeroMod;
 
 import java.util.HashMap;
@@ -17,16 +17,16 @@ import java.util.HashMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
-	private final static HashMap<String, Object> guistate = CreatesionMenu.guistate;
+public class CreationitemguiScreen extends AbstractContainerScreen<CreationitemguiMenu> {
+	private final static HashMap<String, Object> guistate = CreationitemguiMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_item;
-	Button button_enchants;
-	Button button_done;
+	Button button_iron_sword;
+	Button button_shield;
+	Button button_back;
 
-	public CreatesionScreen(CreatesionMenu container, Inventory inventory, Component text) {
+	public CreationitemguiScreen(CreationitemguiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -37,7 +37,7 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("my_hero:textures/screens/createsion.png");
+	private static final ResourceLocation texture = new ResourceLocation("my_hero:textures/screens/creationitemgui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -72,7 +72,6 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.my_hero.createsion.label_creation"), 57, 4, -6750208);
 	}
 
 	@Override
@@ -83,25 +82,29 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 	@Override
 	public void init() {
 		super.init();
-		button_item = Button.builder(Component.translatable("gui.my_hero.createsion.button_item"), e -> {
+		button_iron_sword = Button.builder(Component.translatable("gui.my_hero.creationitemgui.button_iron_sword"), e -> {
 			if (true) {
-				MyHeroMod.PACKET_HANDLER.sendToServer(new CreatesionButtonMessage(0, x, y, z));
-				CreatesionButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				MyHeroMod.PACKET_HANDLER.sendToServer(new CreationitemguiButtonMessage(0, x, y, z));
+				CreationitemguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 3, this.topPos + 9, 46, 20).build();
-		guistate.put("button:button_item", button_item);
-		this.addRenderableWidget(button_item);
-		button_enchants = Button.builder(Component.translatable("gui.my_hero.createsion.button_enchants"), e -> {
-		}).bounds(this.leftPos + 3, this.topPos + 29, 67, 20).build();
-		guistate.put("button:button_enchants", button_enchants);
-		this.addRenderableWidget(button_enchants);
-		button_done = Button.builder(Component.translatable("gui.my_hero.createsion.button_done"), e -> {
+		}).bounds(this.leftPos + 0, this.topPos + 5, 77, 20).build();
+		guistate.put("button:button_iron_sword", button_iron_sword);
+		this.addRenderableWidget(button_iron_sword);
+		button_shield = Button.builder(Component.translatable("gui.my_hero.creationitemgui.button_shield"), e -> {
 			if (true) {
-				MyHeroMod.PACKET_HANDLER.sendToServer(new CreatesionButtonMessage(2, x, y, z));
-				CreatesionButtonMessage.handleButtonAction(entity, 2, x, y, z);
+				MyHeroMod.PACKET_HANDLER.sendToServer(new CreationitemguiButtonMessage(1, x, y, z));
+				CreationitemguiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 61, this.topPos + 137, 46, 20).build();
-		guistate.put("button:button_done", button_done);
-		this.addRenderableWidget(button_done);
+		}).bounds(this.leftPos + 0, this.topPos + 24, 56, 20).build();
+		guistate.put("button:button_shield", button_shield);
+		this.addRenderableWidget(button_shield);
+		button_back = Button.builder(Component.translatable("gui.my_hero.creationitemgui.button_back"), e -> {
+			if (true) {
+				MyHeroMod.PACKET_HANDLER.sendToServer(new CreationitemguiButtonMessage(2, x, y, z));
+				CreationitemguiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}).bounds(this.leftPos + 61, this.topPos + 81, 46, 20).build();
+		guistate.put("button:button_back", button_back);
+		this.addRenderableWidget(button_back);
 	}
 }

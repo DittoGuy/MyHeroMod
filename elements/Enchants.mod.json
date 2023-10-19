@@ -1,0 +1,77 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_unbreaking",
+          "text": "unbreaking",
+          "width": 77,
+          "height": 20,
+          "x": 127,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_looting",
+          "text": "looting",
+          "width": 61,
+          "height": 20,
+          "x": 133,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sweeping",
+          "text": "sweeping",
+          "width": 67,
+          "height": 20,
+          "x": 132,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sharpness",
+          "text": "sharpness",
+          "width": 72,
+          "height": 20,
+          "x": 130,
+          "y": 100
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_mending",
+          "text": "mending",
+          "width": 61,
+          "height": 20,
+          "x": 137,
+          "y": 120
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

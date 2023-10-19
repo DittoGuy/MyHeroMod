@@ -11,10 +11,14 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.myhero.world.inventory.EnchantsMenu;
+import net.mcreator.myhero.world.inventory.CreationitemguiMenu;
 import net.mcreator.myhero.world.inventory.CreatesionMenu;
 import net.mcreator.myhero.MyHeroMod;
 
 public class MyHeroModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, MyHeroMod.MODID);
 	public static final RegistryObject<MenuType<CreatesionMenu>> CREATESION = REGISTRY.register("createsion", () -> IForgeMenuType.create(CreatesionMenu::new));
+	public static final RegistryObject<MenuType<CreationitemguiMenu>> CREATIONITEMGUI = REGISTRY.register("creationitemgui", () -> IForgeMenuType.create(CreationitemguiMenu::new));
+	public static final RegistryObject<MenuType<EnchantsMenu>> ENCHANTS = REGISTRY.register("enchants", () -> IForgeMenuType.create(EnchantsMenu::new));
 }

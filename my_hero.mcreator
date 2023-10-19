@@ -9,8 +9,8 @@
       "registry_name": "super_regeneration_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/my_hero/models/item/super_regeneration_1.json",
-          "src/main/java/net/mcreator/myhero/item/SuperRegeneration1Item.java"
+          "src/main/java/net/mcreator/myhero/item/SuperRegeneration1Item.java",
+          "src/main/resources/assets/my_hero/models/item/super_regeneration_1.json"
         ]
       },
       "path": "~/quirks/transformation Quirk/Super Regeneration"
@@ -111,8 +111,8 @@
       "registry_name": "invisibility",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/myhero/item/InvisibilityItem.java",
-          "src/main/resources/assets/my_hero/models/item/invisibility.json"
+          "src/main/resources/assets/my_hero/models/item/invisibility.json",
+          "src/main/java/net/mcreator/myhero/item/InvisibilityItem.java"
         ]
       },
       "path": "~/quirks/mutation Quirks/Invisibility"
@@ -126,8 +126,8 @@
       "registry_name": "invisibilityd",
       "metadata": {
         "files": [
-          "src/main/resources/assets/my_hero/particles/invisibilityd.json",
-          "src/main/java/net/mcreator/myhero/client/particle/InvisibilitydParticle.java"
+          "src/main/java/net/mcreator/myhero/client/particle/InvisibilitydParticle.java",
+          "src/main/resources/assets/my_hero/particles/invisibilityd.json"
         ]
       },
       "path": "~/quirks/mutation Quirks/Invisibility"
@@ -141,8 +141,8 @@
       "registry_name": "engine",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/myhero/item/EngineItem.java",
-          "src/main/resources/assets/my_hero/models/item/engine.json"
+          "src/main/resources/assets/my_hero/models/item/engine.json",
+          "src/main/java/net/mcreator/myhero/item/EngineItem.java"
         ]
       },
       "path": "~/quirks/mutation Quirks/Engine"
@@ -200,8 +200,8 @@
       "registry_name": "recipro_burst",
       "metadata": {
         "files": [
-          "src/main/resources/assets/my_hero/models/item/recipro_burst.json",
-          "src/main/java/net/mcreator/myhero/item/ReciproBurstItem.java"
+          "src/main/java/net/mcreator/myhero/item/ReciproBurstItem.java",
+          "src/main/resources/assets/my_hero/models/item/recipro_burst.json"
         ]
       },
       "path": "~/quirks/mutation Quirks/Engine"
@@ -250,8 +250,8 @@
       "registry_name": "air",
       "metadata": {
         "files": [
-          "src/main/resources/assets/my_hero/particles/air.json",
-          "src/main/java/net/mcreator/myhero/client/particle/AirParticle.java"
+          "src/main/java/net/mcreator/myhero/client/particle/AirParticle.java",
+          "src/main/resources/assets/my_hero/particles/air.json"
         ]
       },
       "path": "~/quirks/emitter Quirks/Air Cannon"
@@ -298,8 +298,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/myhero/item/AirCannonItem.java",
-          "src/main/resources/assets/my_hero/models/item/air_cannon.json",
-          "src/main/java/net/mcreator/myhero/entity/AirCannonEntity.java"
+          "src/main/java/net/mcreator/myhero/entity/AirCannonEntity.java",
+          "src/main/resources/assets/my_hero/models/item/air_cannon.json"
         ]
       },
       "path": "~/quirks/emitter Quirks/Air Cannon"
@@ -590,8 +590,8 @@
       "registry_name": "floatfling",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/myhero/item/FloatflingItem.java",
-          "src/main/resources/assets/my_hero/models/item/floatfling.json"
+          "src/main/resources/assets/my_hero/models/item/floatfling.json",
+          "src/main/java/net/mcreator/myhero/item/FloatflingItem.java"
         ]
       },
       "path": "~/quirks/emitter Quirks/Float"
@@ -781,10 +781,10 @@
       "registry_name": "copy",
       "metadata": {
         "files": [
-          "src/main/resources/assets/my_hero/models/item/copy_spawn_egg.json",
           "src/main/java/net/mcreator/myhero/entity/CopyEntity.java",
           "src/main/java/net/mcreator/myhero/client/renderer/CopyRenderer.java",
-          "src/main/resources/data/my_hero/forge/biome_modifier/copy_biome_modifier.json"
+          "src/main/resources/data/my_hero/forge/biome_modifier/copy_biome_modifier.json",
+          "src/main/resources/assets/my_hero/models/item/copy_spawn_egg.json"
         ]
       },
       "path": "~/mobs"
@@ -850,7 +850,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/myhero/client/gui/CreatesionScreen.java",
-          "src/main/java/net/mcreator/myhero/world/inventory/CreatesionMenu.java"
+          "src/main/java/net/mcreator/myhero/world/inventory/CreatesionMenu.java",
+          "src/main/java/net/mcreator/myhero/network/CreatesionButtonMessage.java"
         ]
       },
       "path": "~/gui stuff/create"
@@ -884,6 +885,149 @@
         "dependencies": []
       },
       "path": "~/Stats"
+    },
+    {
+      "name": "Creationitemgui",
+      "type": "gui",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creationitemgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/world/inventory/CreationitemguiMenu.java",
+          "src/main/java/net/mcreator/myhero/client/gui/CreationitemguiScreen.java",
+          "src/main/java/net/mcreator/myhero/network/CreationitemguiButtonMessage.java"
+        ]
+      },
+      "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Creationitemselect",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creationitemselect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/CreationitemselectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Ironswordclick",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironswordclick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/IronswordclickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Createiondone",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "createiondone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/CreateiondoneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Shieldcreate",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shieldcreate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/ShieldcreateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Enchants",
+      "type": "gui",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchants",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/world/inventory/EnchantsMenu.java",
+          "src/main/java/net/mcreator/myhero/client/gui/EnchantsScreen.java"
+        ]
+      },
+      "path": "~/gui stuff/create"
     }
   ],
   "variable_elements": [
@@ -942,15 +1086,26 @@
       "advancements.gearshift_quirk.title": "Gearshift Quirk",
       "entity.my_hero.copy": "Copy",
       "key.my_hero.usequirk": "Usequirk",
+      "gui.my_hero.createsion.button_item": "Items",
       "advancements.floatquirk.title": "Floatquirk",
+      "item.my_hero.testgujiopener": "Testgujiopener",
+      "gui.my_hero.createsion.button_enchants": "Enchants",
+      "gui.my_hero.creationitemgui.button_shield": "shield",
+      "gui.my_hero.enchants.button_sweeping": "sweeping",
       "effect.my_hero.cooldown": "cooldown",
+      "gui.my_hero.creationitemgui.button_back": "Back",
+      "gui.my_hero.creationitemgui.button_iron_sword": "Iron Sword",
+      "gui.my_hero.enchants.button_mending": "mending",
       "advancements.jackpot.title": "Jackpot",
-      "advancements.permeation_adv.title": "Permeation Adv",
-      "advancements.floatquirk.descr": "float",
-      "key.my_hero.switchquirk": "Switch quirk",
-      "item.my_hero.super_regeneration_1": "Super Regeneration 1",
+      "gui.my_hero.enchants.button_sharpness": "sharpness",
+      "gui.my_hero.enchants.button_unbreaking": "unbreaking",
       "item.my_hero.engine": "Engine",
+      "item.my_hero.super_regeneration_1": "Super Regeneration 1",
+      "key.my_hero.switchquirk": "Switch quirk",
+      "advancements.floatquirk.descr": "float",
+      "advancements.permeation_adv.title": "Permeation Adv",
       "advancements.jackpot.descr": "hakari",
+      "gui.my_hero.createsion.button_done": "done",
       "item_group.my_hero.tempbeforegui": "Tempbeforegui",
       "advancements.permeation_adv.descr": "d",
       "advancements.quirk_engine.descr": "Engine",
@@ -958,10 +1113,12 @@
       "item.my_hero.recipro_burst": "Recipro Burst",
       "item.my_hero.air_cannon": "Air Cannon",
       "item.my_hero.floatfling": "Floatfling",
+      "gui.my_hero.createsion.label_creation": "Creation",
       "item.my_hero.invisibility": "Invisibility",
       "advancements.gearshift_quirk.descr": "gearshift",
       "advancements.super_healing.title": "Super Healing",
       "item.my_hero.floatitem": "Floatitem",
+      "gui.my_hero.enchants.button_looting": "looting",
       "advancements.quirk_engine.title": "Quirk Engine",
       "item.my_hero.shock_absorption": "Shock Absorption",
       "item.my_hero.copy_spawn_egg": "Copy Spawn Egg"

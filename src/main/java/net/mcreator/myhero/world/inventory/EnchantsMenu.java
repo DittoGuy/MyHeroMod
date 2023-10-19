@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class CreatesionMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class EnchantsMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -35,8 +35,8 @@ public class CreatesionMenu extends AbstractContainerMenu implements Supplier<Ma
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public CreatesionMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MyHeroModMenus.CREATESION.get(), id);
+	public EnchantsMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(MyHeroModMenus.ENCHANTS.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);

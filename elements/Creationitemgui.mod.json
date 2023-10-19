@@ -11,57 +11,45 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "label",
-        "data": {
-          "name": "label_creation",
-          "text": {
-            "fixedValue": "Creation"
-          },
-          "color": {
-            "value": -6750208,
-            "falpha": 0.0
-          },
-          "x": 183,
-          "y": 41
-        }
-      },
-      {
         "type": "button",
         "data": {
-          "name": "button_item",
-          "text": "Items",
+          "name": "button_iron_sword",
+          "text": "Iron Sword",
           "onClick": {
-            "name": "Creationitemselect"
+            "name": "Ironswordclick"
           },
-          "width": 46,
+          "width": 77,
           "height": 20,
-          "x": 129,
-          "y": 46
+          "x": 126,
+          "y": 42
         }
       },
       {
         "type": "button",
         "data": {
-          "name": "button_enchants",
-          "text": "Enchants",
-          "width": 67,
-          "height": 20,
-          "x": 129,
-          "y": 66
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_done",
-          "text": "done",
+          "name": "button_shield",
+          "text": "shield",
           "onClick": {
-            "name": "Createiondone"
+            "name": "Shieldcreate"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 126,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "onClick": {
+            "name": "TestgujiopenerRightclicked"
           },
           "width": 46,
           "height": 20,
           "x": 187,
-          "y": 174
+          "y": 118
         }
       }
     ],

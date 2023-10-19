@@ -13,11 +13,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.myhero.world.inventory.CreatesionMenu;
+import net.mcreator.myhero.world.inventory.CreationitemguiMenu;
 
 import io.netty.buffer.Unpooled;
 
-public class TestgujiopenerRightclickedProcedure {
+public class CreationitemselectProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -27,12 +27,12 @@ public class TestgujiopenerRightclickedProcedure {
 				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("Createsion");
+						return Component.literal("Creationitemgui");
 					}
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new CreatesionMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new CreationitemguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}

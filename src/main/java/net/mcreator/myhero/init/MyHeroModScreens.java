@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.myhero.client.gui.EnchantsScreen;
+import net.mcreator.myhero.client.gui.CreationitemguiScreen;
 import net.mcreator.myhero.client.gui.CreatesionScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,6 +21,8 @@ public class MyHeroModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(MyHeroModMenus.CREATESION.get(), CreatesionScreen::new);
+			MenuScreens.register(MyHeroModMenus.CREATIONITEMGUI.get(), CreationitemguiScreen::new);
+			MenuScreens.register(MyHeroModMenus.ENCHANTS.get(), EnchantsScreen::new);
 		});
 	}
 }
