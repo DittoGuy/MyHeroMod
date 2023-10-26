@@ -1,4 +1,6 @@
 {
+  "item.my_hero.trigger": "Trigger",
+  "advancements.copyquirk.title": "Copyquirk",
   "advancements.gearshift_quirk.title": "Gearshift Quirk",
   "entity.my_hero.copy": "Copy",
   "key.my_hero.usequirk": "Usequirk",
@@ -12,6 +14,7 @@
   "gui.my_hero.creationitemgui.button_back": "Back",
   "gui.my_hero.creationitemgui.button_iron_sword": "Iron Sword",
   "gui.my_hero.enchants.button_mending": "mending",
+  "effect.my_hero.copyactive": "copy",
   "advancements.jackpot.title": "Jackpot",
   "gui.my_hero.enchants.button_sharpness": "sharpness",
   "gui.my_hero.enchants.button_unbreaking": "unbreaking",
@@ -33,6 +36,7 @@
   "item.my_hero.invisibility": "Invisibility",
   "advancements.gearshift_quirk.descr": "gearshift",
   "advancements.super_healing.title": "Super Healing",
+  "advancements.copyquirk.descr": "copy",
   "item.my_hero.floatitem": "Floatitem",
   "gui.my_hero.enchants.button_looting": "looting",
   "advancements.quirk_engine.title": "Quirk Engine",

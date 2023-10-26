@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "my_hero:shock_absorption"
+    },
+    "title": {
+      "translate": "advancements.copyquirk.title"
+    },
+    "description": {
+      "translate": "advancements.copyquirk.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "copyquirk": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:bedrock"
+      }
+    }
+  },
+  "parent": "my_hero:quirk_engine"
+}

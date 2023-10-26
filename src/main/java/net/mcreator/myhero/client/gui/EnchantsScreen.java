@@ -9,6 +9,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 
 import net.mcreator.myhero.world.inventory.EnchantsMenu;
+import net.mcreator.myhero.network.EnchantsButtonMessage;
+import net.mcreator.myhero.MyHeroMod;
 
 import java.util.HashMap;
 
@@ -83,6 +85,10 @@ public class EnchantsScreen extends AbstractContainerScreen<EnchantsMenu> {
 	public void init() {
 		super.init();
 		button_unbreaking = Button.builder(Component.translatable("gui.my_hero.enchants.button_unbreaking"), e -> {
+			if (true) {
+				MyHeroMod.PACKET_HANDLER.sendToServer(new EnchantsButtonMessage(0, x, y, z));
+				EnchantsButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 1, this.topPos + 4, 77, 20).build();
 		guistate.put("button:button_unbreaking", button_unbreaking);
 		this.addRenderableWidget(button_unbreaking);

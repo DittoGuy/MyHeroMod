@@ -92,6 +92,10 @@ public class CreatesionScreen extends AbstractContainerScreen<CreatesionMenu> {
 		guistate.put("button:button_item", button_item);
 		this.addRenderableWidget(button_item);
 		button_enchants = Button.builder(Component.translatable("gui.my_hero.createsion.button_enchants"), e -> {
+			if (true) {
+				MyHeroMod.PACKET_HANDLER.sendToServer(new CreatesionButtonMessage(1, x, y, z));
+				CreatesionButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}).bounds(this.leftPos + 3, this.topPos + 29, 67, 20).build();
 		guistate.put("button:button_enchants", button_enchants);
 		this.addRenderableWidget(button_enchants);

@@ -15,6 +15,9 @@
         "data": {
           "name": "button_unbreaking",
           "text": "unbreaking",
+          "onClick": {
+            "name": "Unbreaking"
+          },
           "width": 77,
           "height": 20,
           "x": 127,

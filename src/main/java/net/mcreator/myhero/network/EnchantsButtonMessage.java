@@ -11,41 +11,39 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.myhero.world.inventory.CreatesionMenu;
-import net.mcreator.myhero.procedures.OpenenchanbtsProcedure;
-import net.mcreator.myhero.procedures.CreationitemselectProcedure;
-import net.mcreator.myhero.procedures.CreateiondoneProcedure;
+import net.mcreator.myhero.world.inventory.EnchantsMenu;
+import net.mcreator.myhero.procedures.UnbreakingProcedure;
 import net.mcreator.myhero.MyHeroMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class CreatesionButtonMessage {
+public class EnchantsButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public CreatesionButtonMessage(FriendlyByteBuf buffer) {
+	public EnchantsButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public CreatesionButtonMessage(int buttonID, int x, int y, int z) {
+	public EnchantsButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(CreatesionButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(EnchantsButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(CreatesionButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(EnchantsButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -60,26 +58,18 @@ public class CreatesionButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = CreatesionMenu.guistate;
+		HashMap guistate = EnchantsMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			CreationitemselectProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 1) {
-
-			OpenenchanbtsProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 2) {
-
-			CreateiondoneProcedure.execute(world, x, y, z, entity);
+			UnbreakingProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MyHeroMod.addNetworkMessage(CreatesionButtonMessage.class, CreatesionButtonMessage::buffer, CreatesionButtonMessage::new, CreatesionButtonMessage::handler);
+		MyHeroMod.addNetworkMessage(EnchantsButtonMessage.class, EnchantsButtonMessage::buffer, EnchantsButtonMessage::new, EnchantsButtonMessage::handler);
 	}
 }

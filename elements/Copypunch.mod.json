@@ -1,0 +1,7 @@
+{
+  "_fv": 47,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_attacked</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"entity_haspotioneffect\"><field name=\"potion\">CUSTOM:Copyactive</field><value name=\"entity\"><block type=\"source_entity_from_deps\"></block></value></block></value><statement name=\"DO0\"><block type=\"controls_if\"><value name=\"IF0\"><block type=\"entity_has_achievement\"><field name=\"achievement\">CUSTOM:Floatquirk</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><statement name=\"DO0\"><block type=\"call_procedure\"><field name=\"procedure\">Copyfloat</field></block></statement></block></statement></block></next></block><block type=\"controls_if\" x=\"343\" y=\"388\"><next><block type=\"controls_if\"><next><block type=\"controls_if\"></block></next></block></next></block></xml>"
+  }
+}

@@ -867,7 +867,16 @@
         "files": [
           "src/main/java/net/mcreator/myhero/procedures/HitbeforeProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
       },
       "path": "~/Stats"
     },
@@ -882,7 +891,16 @@
         "files": [
           "src/main/java/net/mcreator/myhero/procedures/EntityAttackProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Stats"
     },
@@ -1024,10 +1042,188 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/myhero/world/inventory/EnchantsMenu.java",
-          "src/main/java/net/mcreator/myhero/client/gui/EnchantsScreen.java"
+          "src/main/java/net/mcreator/myhero/client/gui/EnchantsScreen.java",
+          "src/main/java/net/mcreator/myhero/network/EnchantsButtonMessage.java"
         ]
       },
       "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Unbreaking",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreaking",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/UnbreakingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Openenchanbts",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openenchanbts",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/OpenenchanbtsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui stuff/create"
+    },
+    {
+      "name": "Copyquirk",
+      "type": "achievement",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copyquirk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/copyquirk.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Copyactive",
+      "type": "potioneffect",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copyactive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/potion/CopyactiveMobEffect.java"
+        ]
+      },
+      "path": "~/gui stuff/copy"
+    },
+    {
+      "name": "Copyfloat",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copyfloat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/CopyfloatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/gates/copygates"
+    },
+    {
+      "name": "Copypunch",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copypunch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/CopypunchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/gates/copygates"
+    },
+    {
+      "name": "TriggerOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger_on_player_stopped_using",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/TriggerOnPlayerStoppedUsingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Trigger",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/item/TriggerItem.java",
+          "src/main/resources/assets/my_hero/models/item/trigger.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Setmaxhealth",
+      "type": "command",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setmaxhealth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/command/SetmaxhealthCommand.java"
+        ]
+      },
+      "path": "~/commands"
     }
   ],
   "variable_elements": [
@@ -1083,6 +1279,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.my_hero.trigger": "Trigger",
+      "advancements.copyquirk.title": "Copyquirk",
       "advancements.gearshift_quirk.title": "Gearshift Quirk",
       "entity.my_hero.copy": "Copy",
       "key.my_hero.usequirk": "Usequirk",
@@ -1096,6 +1294,7 @@
       "gui.my_hero.creationitemgui.button_back": "Back",
       "gui.my_hero.creationitemgui.button_iron_sword": "Iron Sword",
       "gui.my_hero.enchants.button_mending": "mending",
+      "effect.my_hero.copyactive": "copy",
       "advancements.jackpot.title": "Jackpot",
       "gui.my_hero.enchants.button_sharpness": "sharpness",
       "gui.my_hero.enchants.button_unbreaking": "unbreaking",
@@ -1117,6 +1316,7 @@
       "item.my_hero.invisibility": "Invisibility",
       "advancements.gearshift_quirk.descr": "gearshift",
       "advancements.super_healing.title": "Super Healing",
+      "advancements.copyquirk.descr": "copy",
       "item.my_hero.floatitem": "Floatitem",
       "gui.my_hero.enchants.button_looting": "looting",
       "advancements.quirk_engine.title": "Quirk Engine",
@@ -1216,7 +1416,12 @@
         "children": [
           {
             "name": "gates",
-            "children": []
+            "children": [
+              {
+                "name": "copygates",
+                "children": []
+              }
+            ]
           },
           {
             "name": "adv",
@@ -1225,8 +1430,20 @@
           {
             "name": "create",
             "children": []
+          },
+          {
+            "name": "copy",
+            "children": []
           }
         ]
+      },
+      {
+        "name": "item",
+        "children": []
+      },
+      {
+        "name": "commands",
+        "children": []
       }
     ]
   },
