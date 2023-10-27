@@ -34,7 +34,7 @@ public class MyHeroModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping USEQUIRK = new KeyMapping("key.my_hero.usequirk", GLFW.GLFW_KEY_0, "key.categories.misc") {
+	public static final KeyMapping USEQUIRK = new KeyMapping("key.my_hero.usequirk", GLFW.GLFW_KEY_Z, "key.categories.mha") {
 		private boolean isDownOld = false;
 
 		@Override

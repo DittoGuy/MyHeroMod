@@ -1177,41 +1177,6 @@
       "path": "~/gui stuff/gates/copygates"
     },
     {
-      "name": "TriggerOnPlayerStoppedUsing",
-      "type": "procedure",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "trigger_on_player_stopped_using",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/myhero/procedures/TriggerOnPlayerStoppedUsingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/item"
-    },
-    {
-      "name": "Trigger",
-      "type": "item",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "trigger",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/myhero/item/TriggerItem.java",
-          "src/main/resources/assets/my_hero/models/item/trigger.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "Setmaxhealth",
       "type": "command",
       "sortid": 61,
@@ -1224,6 +1189,40 @@
         ]
       },
       "path": "~/commands"
+    },
+    {
+      "name": "Oneforall",
+      "type": "achievement",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneforall",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/my_hero/advancements/oneforall.json"
+        ]
+      },
+      "path": "~/gui stuff/adv"
+    },
+    {
+      "name": "Oneforallgate",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneforallgate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/OneforallgateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/gui stuff/gates"
     }
   ],
   "variable_elements": [
@@ -1279,10 +1278,10 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.my_hero.trigger": "Trigger",
       "advancements.copyquirk.title": "Copyquirk",
       "advancements.gearshift_quirk.title": "Gearshift Quirk",
       "entity.my_hero.copy": "Copy",
+      "advancements.oneforall.title": "Oneforall",
       "key.my_hero.usequirk": "Usequirk",
       "gui.my_hero.createsion.button_item": "Items",
       "advancements.floatquirk.title": "Floatquirk",
@@ -1306,6 +1305,7 @@
       "advancements.jackpot.descr": "hakari",
       "gui.my_hero.createsion.button_done": "done",
       "item_group.my_hero.tempbeforegui": "Tempbeforegui",
+      "advancements.oneforall.descr": "oneforall",
       "advancements.permeation_adv.descr": "d",
       "advancements.quirk_engine.descr": "Engine",
       "advancements.super_healing.descr": "super healing",

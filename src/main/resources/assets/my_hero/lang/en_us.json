@@ -1,8 +1,8 @@
 {
-  "item.my_hero.trigger": "Trigger",
   "advancements.copyquirk.title": "Copyquirk",
   "advancements.gearshift_quirk.title": "Gearshift Quirk",
   "entity.my_hero.copy": "Copy",
+  "advancements.oneforall.title": "Oneforall",
   "key.my_hero.usequirk": "Usequirk",
   "gui.my_hero.createsion.button_item": "Items",
   "advancements.floatquirk.title": "Floatquirk",
@@ -26,6 +26,7 @@
   "advancements.jackpot.descr": "hakari",
   "gui.my_hero.createsion.button_done": "done",
   "item_group.my_hero.tempbeforegui": "Tempbeforegui",
+  "advancements.oneforall.descr": "oneforall",
   "advancements.permeation_adv.descr": "d",
   "advancements.quirk_engine.descr": "Engine",
   "advancements.super_healing.descr": "super healing",

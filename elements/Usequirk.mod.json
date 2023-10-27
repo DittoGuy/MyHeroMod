@@ -2,9 +2,9 @@
   "_fv": 47,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "0",
+    "triggerKey": "Z",
     "keyBindingName": "Usequirk",
-    "keyBindingCategoryKey": "misc",
+    "keyBindingCategoryKey": "mha",
     "onKeyPressed": {
       "name": "UsequirkOnKeyPressed"
     }

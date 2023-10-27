@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "my_hero:super_regeneration_1"
+    },
+    "title": {
+      "translate": "advancements.oneforall.title"
+    },
+    "description": {
+      "translate": "advancements.oneforall.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "oneforall": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bedrock"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "my_hero:quirk_engine"
+}

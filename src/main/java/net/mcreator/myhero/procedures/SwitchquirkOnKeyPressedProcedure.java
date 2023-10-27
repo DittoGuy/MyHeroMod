@@ -16,6 +16,7 @@ public class SwitchquirkOnKeyPressedProcedure {
 		boolean gearshiftD = false;
 		boolean healD = false;
 		boolean permeation = false;
+		boolean oneforall = false;
 		if (entity instanceof ServerPlayer _plr0 && _plr0.level instanceof ServerLevel && _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().getAdvancement(new ResourceLocation("my_hero:quirk_engine"))).isDone()
 				&& gate == false) {
 			if (!entity.isShiftKeyDown()) {
@@ -300,6 +301,51 @@ public class SwitchquirkOnKeyPressedProcedure {
 						});
 					}
 					PermeationGateProcedure.execute(entity);
+				}
+			}
+		}
+		if (entity instanceof ServerPlayer _plr15 && _plr15.level instanceof ServerLevel && _plr15.getAdvancements().getOrStartProgress(_plr15.server.getAdvancements().getAdvancement(new ResourceLocation("my_hero:oneforall"))).isDone()
+				&& oneforall == false) {
+			if (!entity.isShiftKeyDown()) {
+				if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk < 1) {
+					{
+						double _setval = (entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk + 1;
+						entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.switchquirk = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					OneforallgateProcedure.execute(entity);
+				} else {
+					{
+						double _setval = 1;
+						entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.switchquirk = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					OneforallgateProcedure.execute(entity);
+				}
+			} else if (entity.isShiftKeyDown()) {
+				if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk <= 1
+						&& (entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk != 1) {
+					{
+						double _setval = (entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk + 1;
+						entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.switchquirk = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					OneforallgateProcedure.execute(entity);
+				} else if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk != 1) {
+					{
+						double _setval = 1;
+						entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.switchquirk = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					OneforallgateProcedure.execute(entity);
 				}
 			}
 		}

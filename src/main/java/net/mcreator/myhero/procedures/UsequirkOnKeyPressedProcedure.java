@@ -12,8 +12,10 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.myhero.network.MyHeroModVariables;
 import net.mcreator.myhero.init.MyHeroModMobEffects;
@@ -28,6 +30,7 @@ public class UsequirkOnKeyPressedProcedure {
 		if (entity == null)
 			return;
 		boolean nu_uh = false;
+		boolean oneforallon = false;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MyHeroModMobEffects.COOLDOWN.get()))) {
 			if (((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).selecetedquirk).equals("Engines On!")) {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
@@ -129,6 +132,8 @@ public class UsequirkOnKeyPressedProcedure {
 						if (!(entity == entityiterator)) {
 							if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 500, 4, false, false));
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles(ParticleTypes.POOF, x, y, z, 5, 1, 2, 1, 0);
 						}
 					}
 				}
@@ -150,6 +155,14 @@ public class UsequirkOnKeyPressedProcedure {
 					if (entity instanceof ServerPlayer _player)
 						_player.setGameMode(GameType.SURVIVAL);
 				});
+			}
+			if (((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).selecetedquirk).equals("one for all full cowl")) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9000, 2, false, false));
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 9000, 2, false, false));
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 9000, 2, false, false));
 			}
 		}
 	}
