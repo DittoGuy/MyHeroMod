@@ -18,6 +18,10 @@ public class MyHeroModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
+		if (tabData.getTab() == CreativeModeTabs.COMBAT) {
+			tabData.accept(MyHeroModItems.KNIFE.get());
+		}
+
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MyHeroModItems.COPY_SPAWN_EGG.get());
 		}

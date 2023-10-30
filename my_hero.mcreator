@@ -1223,6 +1223,67 @@
         ]
       },
       "path": "~/gui stuff/gates"
+    },
+    {
+      "name": "Knife",
+      "type": "item",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/my_hero/models/item/knife.json",
+          "src/main/java/net/mcreator/myhero/item/KnifeItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "GearshiftOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gearshift_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/procedures/GearshiftOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/gui stuff"
+    },
+    {
+      "name": "Gearshift",
+      "type": "potioneffect",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gearshift",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/myhero/potion/GearshiftMobEffect.java"
+        ]
+      },
+      "path": "~/gui stuff"
     }
   ],
   "variable_elements": [
@@ -1291,11 +1352,13 @@
       "gui.my_hero.enchants.button_sweeping": "sweeping",
       "effect.my_hero.cooldown": "cooldown",
       "gui.my_hero.creationitemgui.button_back": "Back",
+      "item.my_hero.knife": "Knife",
       "gui.my_hero.creationitemgui.button_iron_sword": "Iron Sword",
       "gui.my_hero.enchants.button_mending": "mending",
       "effect.my_hero.copyactive": "copy",
       "advancements.jackpot.title": "Jackpot",
       "gui.my_hero.enchants.button_sharpness": "sharpness",
+      "effect.my_hero.gearshift": "Gear Shift",
       "gui.my_hero.enchants.button_unbreaking": "unbreaking",
       "item.my_hero.engine": "Engine",
       "item.my_hero.super_regeneration_1": "Super Regeneration 1",

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "d",
+        "2": "black-fabric-texture-background-vector"
+      },
+      "name": "default"
+    }
+  }
+}

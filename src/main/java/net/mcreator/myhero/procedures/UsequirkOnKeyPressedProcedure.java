@@ -31,6 +31,7 @@ public class UsequirkOnKeyPressedProcedure {
 			return;
 		boolean nu_uh = false;
 		boolean oneforallon = false;
+		boolean gearshifton = false;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MyHeroModMobEffects.COOLDOWN.get()))) {
 			if (((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).selecetedquirk).equals("Engines On!")) {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
@@ -101,6 +102,8 @@ public class UsequirkOnKeyPressedProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 4, false, false));
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(Component.literal("Gear Shift-Self Speed 4"), true);
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(MyHeroModMobEffects.GEARSHIFT.get(), 500, 1, false, false));
 			}
 			if (((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).selecetedquirk).equals("Gear Shift-Other Speed 4")) {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())

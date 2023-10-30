@@ -1,0 +1,8 @@
+{
+  "parent": "my_hero:custom/toga_knife",
+  "textures": {
+    "1": "my_hero:block/d",
+    "2": "my_hero:block/black-fabric-texture-background-vector",
+    "particle": "my_hero:item/trigger"
+  }
+}
