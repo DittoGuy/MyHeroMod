@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.myhero.client.gui.Godtest2Screen;
 import net.mcreator.myhero.client.gui.EnchantsScreen;
 import net.mcreator.myhero.client.gui.CreationitemguiScreen;
 import net.mcreator.myhero.client.gui.CreatesionScreen;
@@ -23,6 +24,7 @@ public class MyHeroModScreens {
 			MenuScreens.register(MyHeroModMenus.CREATESION.get(), CreatesionScreen::new);
 			MenuScreens.register(MyHeroModMenus.CREATIONITEMGUI.get(), CreationitemguiScreen::new);
 			MenuScreens.register(MyHeroModMenus.ENCHANTS.get(), EnchantsScreen::new);
+			MenuScreens.register(MyHeroModMenus.GODTEST_2.get(), Godtest2Screen::new);
 		});
 	}
 }

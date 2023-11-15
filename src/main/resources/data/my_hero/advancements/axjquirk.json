@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "my_hero:knife"
+    },
+    "title": {
+      "translate": "advancements.axjquirk.title"
+    },
+    "description": {
+      "translate": "advancements.axjquirk.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "axjquirk": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bedrock"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "my_hero:quirk_engine"
+}

@@ -36,4 +36,5 @@ public class MyHeroModItems {
 	public static final RegistryObject<Item> COPY_SPAWN_EGG = REGISTRY.register("copy_spawn_egg", () -> new ForgeSpawnEggItem(MyHeroModEntities.COPY, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> TESTGUJIOPENER = REGISTRY.register("testgujiopener", () -> new TestgujiopenerItem());
 	public static final RegistryObject<Item> KNIFE = REGISTRY.register("knife", () -> new KnifeItem());
+	public static final RegistryObject<Item> NOMUTEST_SPAWN_EGG = REGISTRY.register("nomutest_spawn_egg", () -> new ForgeSpawnEggItem(MyHeroModEntities.NOMUTEST, -1, -1, new Item.Properties()));
 }

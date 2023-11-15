@@ -18,7 +18,16 @@ public class OneforallgateProcedure {
 				&& oneforall == false) {
 			if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk == 1) {
 				{
-					String _setval = "one for all full cowl";
+					String _setval = "one for all full cowl 5%";
+					entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.selecetedquirk = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).selecetedquirk).equals("one for all full cowl 5%") == entity.isShiftKeyDown()) {
+				{
+					String _setval = "one for all full cowl 10%";
 					entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selecetedquirk = _setval;
 						capability.syncPlayerVariables(entity);

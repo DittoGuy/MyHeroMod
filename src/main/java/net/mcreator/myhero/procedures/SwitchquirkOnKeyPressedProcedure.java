@@ -307,7 +307,7 @@ public class SwitchquirkOnKeyPressedProcedure {
 		if (entity instanceof ServerPlayer _plr15 && _plr15.level instanceof ServerLevel && _plr15.getAdvancements().getOrStartProgress(_plr15.server.getAdvancements().getAdvancement(new ResourceLocation("my_hero:oneforall"))).isDone()
 				&& oneforall == false) {
 			if (!entity.isShiftKeyDown()) {
-				if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk < 1) {
+				if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk < 3) {
 					{
 						double _setval = (entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk + 1;
 						entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -327,7 +327,7 @@ public class SwitchquirkOnKeyPressedProcedure {
 					OneforallgateProcedure.execute(entity);
 				}
 			} else if (entity.isShiftKeyDown()) {
-				if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk <= 1
+				if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk <= 3
 						&& (entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk != 1) {
 					{
 						double _setval = (entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk + 1;
@@ -339,7 +339,7 @@ public class SwitchquirkOnKeyPressedProcedure {
 					OneforallgateProcedure.execute(entity);
 				} else if ((entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MyHeroModVariables.PlayerVariables())).switchquirk != 1) {
 					{
-						double _setval = 1;
+						double _setval = 3;
 						entity.getCapability(MyHeroModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.switchquirk = _setval;
 							capability.syncPlayerVariables(entity);

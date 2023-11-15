@@ -13,6 +13,8 @@
  */
 package net.mcreator.myhero;
 
+import software.bernie.geckolib.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -56,11 +58,12 @@ public class MyHeroMod {
 		MyHeroModItems.REGISTRY.register(bus);
 		MyHeroModEntities.REGISTRY.register(bus);
 
-		MyHeroModParticleTypes.REGISTRY.register(bus);
 		MyHeroModMobEffects.REGISTRY.register(bus);
 
+		MyHeroModParticleTypes.REGISTRY.register(bus);
 		MyHeroModMenus.REGISTRY.register(bus);
 
+		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

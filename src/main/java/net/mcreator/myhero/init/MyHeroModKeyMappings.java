@@ -17,6 +17,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.myhero.network.UsequirkMessage;
 import net.mcreator.myhero.network.SwitchquirkMessage;
+import net.mcreator.myhero.network.OneforallstageupMessage;
 import net.mcreator.myhero.MyHeroMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -47,11 +48,25 @@ public class MyHeroModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping ONEFORALLSTAGEUP = new KeyMapping("key.my_hero.oneforallstageup", GLFW.GLFW_KEY_G, "key.categories.mha") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				MyHeroMod.PACKET_HANDLER.sendToServer(new OneforallstageupMessage(0, 0));
+				OneforallstageupMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(SWITCHQUIRK);
 		event.register(USEQUIRK);
+		event.register(ONEFORALLSTAGEUP);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +76,7 @@ public class MyHeroModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				SWITCHQUIRK.consumeClick();
 				USEQUIRK.consumeClick();
+				ONEFORALLSTAGEUP.consumeClick();
 			}
 		}
 	}

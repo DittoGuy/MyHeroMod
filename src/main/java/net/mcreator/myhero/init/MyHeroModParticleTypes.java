@@ -17,4 +17,5 @@ public class MyHeroModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, MyHeroMod.MODID);
 	public static final RegistryObject<SimpleParticleType> INVISIBILITYD = REGISTRY.register("invisibilityd", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> AIR = REGISTRY.register("air", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> ONEFORALLD = REGISTRY.register("oneforalld", () -> new SimpleParticleType(false));
 }

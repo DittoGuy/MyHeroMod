@@ -18,6 +18,6 @@ public class CopyRenderer extends HumanoidMobRenderer<CopyEntity, HumanoidModel<
 
 	@Override
 	public ResourceLocation getTextureLocation(CopyEntity entity) {
-		return new ResourceLocation("my_hero:textures/entities/1-14steve2-14270842.png");
+		return new ResourceLocation("my_hero:textures/entities/2023_10_20_--plus-ultra---22058077.png");
 	}
 }

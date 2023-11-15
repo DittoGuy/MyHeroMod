@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "G",
+    "keyBindingName": "Oneforallstageup",
+    "keyBindingCategoryKey": "mha",
+    "onKeyPressed": {
+      "name": "OneforallstageupOnKeyPressed"
+    }
+  }
+}

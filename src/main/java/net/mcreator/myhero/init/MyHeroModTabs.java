@@ -24,6 +24,7 @@ public class MyHeroModTabs {
 
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MyHeroModItems.COPY_SPAWN_EGG.get());
+			tabData.accept(MyHeroModItems.NOMUTEST_SPAWN_EGG.get());
 		}
 	}
 
